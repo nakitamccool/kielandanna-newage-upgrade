@@ -37,7 +37,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Kiel & Anna</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">K&A</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -51,65 +51,71 @@
               <a class="nav-link js-scroll-trigger" href="#accommodation">Accommodation</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#gettingthere">Getting There</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#getintouch">Get in touch</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <header class="masthead">
+    <!--<header class="masthead">-->
       <!-- Invite landing page -->
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto header-content-inner">
-              <h2 class="mb-5 title">We're getting married on the 22nd of June and we'd love to have you there to help us celebrate.</h2>
-              <a href="#thebigday" class="calltoaction btn btn-outline btn-xl js-scroll-trigger">Tell me more!</a>
-            </div>
-          </div>
+    <!--  <div class="container h-100">-->
+    <!--    <div class="row h-100">-->
+    <!--        <div class="my-auto">-->
+    <!--        <h2 class="my-auto title">Kiel & Anna | 22nd June 2019</h2>-->
+    <!--        <button type="button" class="btn tellmemore mx-auto">-->
+    <!--          <i class="fas fa-angle-down"></i>-->
+    <!--        </button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+      <!-- End of Invite landing page -->
+    <!--</header>-->
+    <header id="hero" class="masthead">
+      <div class="container">
+        <div class="row">
+            <h2 class="my-auto title">Kiel & Anna | 22nd June 2019</h2>
+            <button type="button" class="btn tellmemore mx-auto"><i class="fas fa-angle-down"></i></button>
         </div>
       </div>
-      <!-- End of Invite landing page -->
     </header>
     
     <!-- The Big Day -->
-    <section class="bg-primary text-center" id="thebigday">
+    <section class="thebigday text-center" id="thebigday">
+      <h2 class="section-heading text-center greytitle">The Big Day</h2>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">The Big Day</h2>
+          <div class="col">
+            <img src="/assets/img/weddingpics/church4.jpg"></img>
+            <h3 class="weddingdetailstitle">Wedding ceremony</h3>
+            <p>Church of the Most Holy Rosary, Abbeyleix</p>
+            <p>1pm</p>
+          </div>
+          <div class="col">
+            <img src="/assets/img/weddingpics/castledurrow400x200.jpg"></img>
+            <h3 class="weddingdetailstitle">Wedding reception</h3>
+            <p>Castle Durrow</p>
+            <p>3pm</p>
           </div>
         </div>
       </div>
     </section>
     <!-- End of The Big Day -->
     
-    <!-- Getting there -->
-    <section class="features" id="accommodation">
-      <div class="container">
-        <div class="row">
-          <div id="map"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Getting there -->
     
     <!-- Staying there -->
-    <section id="stayingthere">
-      <div class="sectiontitle">
-        <h2 class="section-heading">Accommodation</h2>
-      </div>
+    <section id="accommodation" class="bg-primary">
+      <h2 class="accommtitle section-heading text-center">Accommodation</h2>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-4 portfolio-item">
+          <div class="col portfolio-item">
             <div class="accommheader">
-              <a href="https://www.castledurrow.com/" target=_blank>
-                <img class="img-responsive" src="assets/img/accommodationpics/castledurrow_300x160.jpg" alt="">
-              </a>
-              <h3>
+              <h4>
                 <a href="https://www.castledurrow.com/" target=_blank>Castle Durrow</a>
-              </h3>
-              <p>Luxurious country house built in 1716, beautifully restored by the Brooks family.</p>
+              </h4>
             </div>
             <div class="accommfooter">
               <p class="accomm_description"><a href="https://www.castledurrow.com/" target=_blank><i
@@ -117,7 +123,7 @@
               </p>
               <p class="accomm_description"><a href="tel:0214636508"><i class="mapicon fa fa-phone"><span
                 class="mapdetail">(057) 873 6555</span></i></a></p>
-              <p class="accomm_description"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> xkm from the church | 0km from the reception </span>
+              <p class="accomm_description"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> 0km from the reception </span>
               </p>
               <p class="accomm_description"><i class="mapicon fa fa-car"></i><span
                 class="mapdetail">Free parking </span></p>
@@ -125,15 +131,11 @@
                 class="mapdetail">Free wifi </span></p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 portfolio-item">
+          <div class="col portfolio-item">
             <div class="accommheader">
-              <a href="http://www.castlearmshotel.ie" target=_blank>
-                <img class="img-responsive" src="assets/img/accommodationpics/castlearms_300x160.jpg" alt="">
-              </a>
-              <h3>
+              <h4>
                 <a href="http://www.castlearmshotel.ie" target=_blank>Castle Arms Hotel</a>
-              </h3>
-              <p>Family friendly hotel and restaurant in the picturesque village of Durrow.</p>
+              </h4>
             </div>
             <div class="accommfooter">
               <p class="accomm_description">
@@ -143,7 +145,7 @@
                 <a href="tel:02498165"><i class="mapicon fa fa-phone"><span class="mapdetail">(024) 98165</span></i></a>
               </p>
               <p class="accomm_description">
-                <i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> 18km from the church | 0.4km from the reception </span>
+                <i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> 0.4km from the reception </span>
               </p>
               <p class="accomm_description">
                 <i class="mapicon fa fa-car"></i><span class="mapdetail">Free parking </span>
@@ -152,15 +154,11 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 portfolio-item">
+          <div class="col portfolio-item">
             <div class="accommheader">
-              <a href="http://www.ashbrookarms.com" target=_blank>
-                <img class="img-responsive" src="assets/img/accommodationpics/ashbrookarms_300x160.jpg" alt="">
-              </a>
-              <h3>
+              <h4>
                 <a href="http://www.ashbrookarms.com" target=_blank>Ashbrook Arms Hotel</a>
-              </h3>
-              <p>Family run guesthouse and restaurant in Durrow village square.</p>
+              </h4>
             </div>
             <div class="accommfooter">
               <p class="accomm_description">
@@ -170,7 +168,7 @@
                 <a href="tel:02498165"><i class="mapicon fa fa-phone"><span class="mapdetail">(024) 98165</span></i></a>
               </p>
               <p class="accomm_description">
-                <i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> 18km from the church | 0.5km from the reception </span>
+                <i class="mapicon fa fa-map-marker"></i><span class="mapdetail"> 0.5km from the reception </span>
               </p>
               <p class="accomm_description">
                 <i class="mapicon fa fa-car"></i><span class="mapdetail">Free parking </span>
@@ -179,35 +177,27 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-12 portfolio-item">
-            <div class="accommheader">
-      <a href="https://www.airbnb.ie/" target=_blank>
-        <img class="img-responsive" src="assets/img/accommodationpics/corkholidayhome.jpg" alt="">
-      </a>
-      <h3>
-        <a href="https://www.airbnb.ie/" target=_blank>Airbnb</a>
-      </h3>
-      <p>Accommodation is also available on Airbnb if you fancy renting a place to stay from a local.
-      Check out the airbnb website for further details. </p>
-    </div>
-            <div class="accommfooter">
-              <p class="accomm_description">
-                <a href="https://www.airbnb.ie/" target=_blank>
-                  <i class="mapicon fa fa-globe"><span class="mapdetail">www.airbnb.ie</span></i>
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
       <div class="overlay"></div>
     </section>
     <!-- End of Staying there -->
+    
+    <!-- Getting there -->
+    <section id="gettingthere">
+      <h2 class="greytitle section-heading text-center">Getting there</h2>
+      <div class="container">
+        <div class="row">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Getting there -->
 
     <!-- Get in touch -->
     <section id="getintouch" class="contact">
       <div class="container">
-        <h2>Get in touch:</h2>
+        <h2 class="section-heading text-center">Get in touch</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-email">
             <a href="mailto:kielandanna@gmail.com"><i class="fa fa-envelope"></i></a>
@@ -259,6 +249,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="assets/lib/new-age/js/new-age.min.js"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script src="assets/lib/new-age/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   </body>
 

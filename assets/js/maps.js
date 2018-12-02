@@ -4,11 +4,12 @@
 
 function initMap() {
     //Location coordinates
-    var church = {lat: 51.910518, lng: -8.170365};
-    var reception = {lat: 51.911443, lng: -8.063080};
-    var bnb = {lat: 51.872086, lng: -7.967201 };
+    var church = {lat: 52.987434, lng: -7.142769};  
+    var castlearms = {lat: 52.845507, lng: -7.395564 }; 
+    var ashbrookarms = {lat: 52.846518, lng: -7.394223 }; 
+    var reception = {lat: 52.846476, lng: -7.400311}; 
     var mapOptions = {
-        zoom: 11,
+        zoom: 15,
         center: reception,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         /*
@@ -120,11 +121,9 @@ function initMap() {
     var churchPopUp = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h3 id="firstHeading" class="firstHeading">Wedding Ceremony</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">The Church of the Most Holy Rosary</h3>' +
         '<div id="bodyContent">' +
-        '<p><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">The Holy Rosary Church, Midleton, Co. Cork, P25 WF65</span></p>' +
-        '<p><a href="http://midletonparish.ie/" target=_blank>' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.midletonparish.ie</span></i></a></p>' +
-        '<p><a href="tel:0214219000"><i class="mapicon fa fa-phone"><span class="mapdetail">(021) 421 9000</span></i></a></p>' +
+        '<p><a href="https://goo.gl/maps/dR3QRJuArBN2" target="_blank"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">Knocknamoe, Abbeyleix, Co. Laois</span></a></p>' +
         '</div>' +
         '</div>';
 
@@ -140,18 +139,19 @@ function initMap() {
     churchmarker.addListener('click', function () {
         churchinfowindow.open(map, churchmarker);
         receptioninfowindow.close(map, receptionmarker);
-        bnbinfowindow.close(map, bnbmarker);
+        castlearmsinfowindow.close(map, castlearmsmarker);
+        ashbrookarmsinfowindow.close(map, ashbrookarmsmarker);
     });
 
     //Reception marker and pop up box
     var receptionPopUp = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h3 id="firstHeading" class="firstHeading">Wedding Reception & Hotel Accommodation</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">Castle Durrow</h3>' +
         '<div id="bodyContent">' +
-        '<p><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">Castlemartyr Resort, Castlemartyr, Co. Cork, P25 X300</span></p>' +
-        '<p><a href="http://www.castlemartyrresort.ie" target=_blank>' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.castlemartyrresort.ie</span></i></a></p>' +
-        '<p><a href="tel:0214636508"><i class="mapicon fa fa-phone"><span class="mapdetail">(021) 463 6508</span></i></a></p>' +
+        '<p><a href="https://goo.gl/maps/zESCS5MFaeF2" target="_blank"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">Castleview, Durrow, Co. Laois, R32 EA02</span></a></p>' +
+        '<p><a href="https://www.castledurrow.com/" "target=_blank">' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.castledurrow.com</span></i></a></p>' +
+        '<p><a href="tel:0214636508"><i class="mapicon fa fa-phone"><span class="mapdetail">(057) 873 6555</span></i></a></p>' +
         '</div>' +
         '</div>';
 
@@ -167,33 +167,62 @@ function initMap() {
     receptionmarker.addListener('click', function () {
         receptioninfowindow.open(map, receptionmarker);
         churchinfowindow.close(map, churchmarker);
-        bnbinfowindow.close(map, bnbmarker);
+        castlearmsinfowindow.close(map, castlearmsmarker);
+        ashbrookarmsinfowindow.close(map, ashbrookarmsmarker);
     });
 
-    //BnB marker and pop up box
-    var bnbPopUp = '<div id="content">' +
+    //castlearms marker and pop up box
+    var castlearmsPopUp = '<div id="content">' +
         '<div id="siteNot ice">' +
         '</div>' +
-        '<h3 id="firstHeading" class="firstHeading">B&B Accommodation</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">Castle Arms Hotel</h3>' +
         '<div id="bodyContent">' +
-        '<p><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">Castle Farm B&B, Ballycrenane, Co. Cork, P25 ET65</span></p>' +
-        '<p><a href="http://www.castlefarmbb.com" target=_blank>' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.castlefarmbb.com</span></i></a></p>' +
-        '<p><a href="tel:02498165"><i class="mapicon fa fa-phone"><span class="mapdetail">(024) 98165</span></i></a></p>' +
+        '<p><a href="https://goo.gl/maps/tbzMSiUA1c32" target="_blank"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">The Square, Durrow Townparks, Co. Laois</span></a></p>' +
+        '<p><a href="http://www.castlearmshotel.ie/" "target=_blank">' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.castlearmshotel.ie</span></i></a></p>' +
+        '<p><a href="tel:02498165"><i class="mapicon fa fa-phone"><span class="mapdetail">(057) 873 6117</span></i></a></p>' +
         '</div>' +
         '</div>';
-    var bnbinfowindow = new google.maps.InfoWindow({
-        content: bnbPopUp
+    var castlearmsinfowindow = new google.maps.InfoWindow({
+        content: castlearmsPopUp
     });
-    var bnbmarker = new google.maps.Marker({
-        position: bnb,
-        title: 'BnB accommodation',
+    var castlearmsmarker = new google.maps.Marker({
+        position: castlearms,
+        title: 'Castle Arms Hotel',
         map: map,
         icon: "assets/img/mapmarkers/bnb.png"
     });
-    bnbmarker.addListener('click', function () {
-        bnbinfowindow.open(map, bnbmarker);
+    castlearmsmarker.addListener('click', function () {
+        castlearmsinfowindow.open(map, castlearmsmarker);
+        ashbrookarmsinfowindow.close(map, castlearmsmarker);
         churchinfowindow.close(map, churchmarker);
         receptioninfowindow.close(map, receptionmarker);
+    });
+    
+    //castlearms marker and pop up box
+    var ashbrookarmsPopUp = '<div id="content">' +
+        '<div id="siteNot ice">' +
+        '</div>' +
+        '<h3 id="firstHeading" class="firstHeading">Ashbrook Arms Hotel</h3>' +
+        '<div id="bodyContent">' +
+        '<p><a href="https://goo.gl/maps/F3NjbAYJUK32" target="_blank"><i class="mapicon fa fa-map-marker"></i><span class="mapdetail">The Square, Course, Durrow, Co. Laois</span></a></p>' +
+        '<p><a href="http://www.ashbrookarms.com/" "target=_blank">' + '<i class="mapicon fa fa-globe"><span class="mapdetail">www.ashbrookarmshotel.com</span></i></a></p>' +
+        '<p><a href="tel:02498165"><i class="mapicon fa fa-phone"><span class="mapdetail">(024) 98165</span></i></a></p>' +
+        '</div>' +
+        '</div>';
+    var ashbrookarmsinfowindow = new google.maps.InfoWindow({
+        content: ashbrookarmsPopUp
+    });
+    var ashbrookarmsmarker = new google.maps.Marker({
+        position: ashbrookarms,
+        title: 'Ashbrook Arms Hotel',
+        map: map,
+        icon: "assets/img/mapmarkers/bnb.png"
+    });
+    ashbrookarmsmarker.addListener('click', function () {
+        ashbrookarmsinfowindow.open(map, ashbrookarmsmarker);
+        churchinfowindow.close(map, churchmarker);
+        receptioninfowindow.close(map, receptionmarker);
+        castlearmsinfowindow.close(map, castlearmsmarker);
     });
 
 }

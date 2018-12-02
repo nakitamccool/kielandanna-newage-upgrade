@@ -1,24 +1,16 @@
-
-/* Specific media queries for background image for landing page */
-
-/* Default if screen size outside of media query */
-/*using larger png file for better quality black and white photo*/
-header.masthead {
-    background-image: url("../img/backgroundphotos/ka_1800.jpg");
-    color: white;
+/*============================================================================*/
+/*========================   HERO IMAGE   ====================================*/
+/*============================================================================*/
+.masthead {
+    background-image: url("../img/backgroundphotos/ka_background.jpg");
     background-repeat: no-repeat;
-    background-position: 0% 0%;
-    /* positions image horizontally and vertically */
     background-size: cover;
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    header {
-        background-image: url("../img/backgroundphotos/ka_960.jpg");
-        background-repeat: no-repeat;
+    .masthead {
         background-position: 75% 75%;
-        background-size: cover;
     }
 }
 
@@ -26,14 +18,43 @@ header.masthead {
 
 /* Medium to Large Devices, Desktops */
 @media only screen and (min-width: 960px) and  (max-width: 1199px) {
-    header {
-        background-image: url("../img/backgroundphotos/ka_1800.jpg");
-        background-repeat: no-repeat;
+    .masthead {
         background-position: 50% 50%;
+    }
+
+}
+/*=========================*/
+/*===== mobile phones =====*/
+/*=========================*/
+
+/*all mobile phones*/
+@media only screen and (max-width: 600px) {
+
+}
+/*large phones*/
+@media (min-width: 425px) and (max-width: 600px) {
+
+}
+/*medium phones*/
+@media (min-width: 320px) and (max-width: 424.98px) {
+    #hero {
+        height: 100vh;
+        background-position-x: -550px;
         background-size: cover;
     }
 
 }
+/* small phones*/
+@media only screen and (max-width: 319.98px) {
+    #hero {
+        height: 100vh;
+        background-position-x: -550px;
+    }
+
+}
+
+
+
 
 /* Specific media queries for background image for landing page */
 
@@ -135,6 +156,8 @@ div.sectiontitle {
 
 .title {
     color: white;
+    font-family: "Madame Cosmetics";
+    text-shadow: 0 0 5px #333;
 }
 
 .subtitle {
@@ -142,7 +165,6 @@ div.sectiontitle {
 }
 
 .bg-primary {
-    color: white;
     background: linear-gradient(#E39B9C,#F4C4C0);
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -150,21 +172,14 @@ div.sectiontitle {
     background-size: cover;
 }
 
-.rsvpimg{
-    height: 100%;
-}
-.rsvpform{
-    height: 100%;
-
+.portfolio-item{
+    background-color: white;
+    color: grey;
 }
 .img-circle{
     border-radius: 50%;
     border: 3px solid #E39B9C;
     margin: 5px;
-}
-
-input#gridRadios1, input#gridRadios2{
-    margin-right: 5px;
 }
 
 
@@ -186,71 +201,24 @@ button.btn.btn-outline.btn-xl.calltoaction.submit {
 
 /* The Big Day section styling */
 
-.photostack {
-    background-color: #F4C4C0;
-}
-
-section.thebigday .section-heading {
-    margin-bottom: 100px;
-    padding: 50px 0;
-}
-
-section.thebigday .section-heading h2 {
-    margin-top: 0;
-}
-
-section.thebigday .section-heading p {
-    margin-bottom: 0;
-}
-
-section.thebigday .device-container,
-section.thebigday .feature-item {
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-section.thebigday .device-container {
-    margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-    section.thebigday .device-container {
-        margin-bottom: 0;
-    }
-}
-
-section.thebigday .feature-item {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-section.thebigday .feature-item h3 {
-    font-size: 30px;
-}
-
-section.thebigday .feature-item i {
-    font-size: 80px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 /* END OF The Big Day section styling */
 
 /* Getting there styling */
 #map {
-    height: 620px;
+    height: 700px;
     width: 100%;
     background-color: #b1b3b0;
 }
 
 span.mapdetail {
     margin-left: 20px;
-    color: #E39B9C;
-    font-size: 12px;
+    color: grey;
+    font-size: small;
 }
 
-i.mapicon.fa.fa-globe:before, i.mapicon.fa.fa-phone:before {
-    color: #b1b3b0;
+i.mapicon.fa:before {
+    color: #F4C4C0;
 }
 
 /* END OF Getting there styling */
@@ -262,16 +230,27 @@ p.accomm_description, span.mapdetail {
     -webkit-font-smoothing: antialiased;
 }
 
-h3>a{
+a{
     color: #E39B9C;
 }
 
-h3>a:hover, h3>a.focus, h3>a.active{
-    color: #E39B9C;
+a:hover, a:focus, a:active{
+    color: #F4C4C0;
+    text-decoration: none;
 }
 
-.col-md-4.portfolio-item {
-    margin-bottom: 30px;
+.portfolio-item {
+    margin: 2%;
+    padding: 2%;
+    min-width: 280px;
+}
+
+.accommtitle{
+    color: white;
+}
+
+p {
+    font-size: normal;
 }
 
 section#stayingthere{
@@ -325,6 +304,7 @@ footer {
 
 /*End of footer*/
 
+/* Navbar */
 #mainNav a.navbar-brand.js-scroll-trigger, h2.section-heading {
     font-family: "Madame Cosmetics";
 }
@@ -339,7 +319,30 @@ footer {
 
 #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
 #mainNav.navbar-shrink .navbar-nav>li>a:hover, 
-#mainNav .navbar-nav>li>a.active {
+#mainNav .navbar-nav>li>a:active{
     color: #E39B9C !important;
 }
 
+/* End of Navbar */
+
+h2.section-heading.text-center {
+    padding-bottom: 4%;
+}
+
+/* The big day */
+.weddingdetailstitle{
+    color: #E39B9C;
+    font-family: "Madame Cosmetics";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.greytitle{
+    color: #6d6d6d;
+}
+
+.tellmemore{
+    border-radius: 50%;
+    color: white;
+    background-color: #F4C4C0;
+}

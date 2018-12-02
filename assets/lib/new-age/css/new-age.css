@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #fdcc52;
+  color: #E39B9C;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
@@ -71,7 +71,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: #E39B9C;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -95,7 +95,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: #E39B9C !important;
   background-color: transparent;
 }
 
@@ -110,7 +110,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #E39B9C;
 }
 
 @media (min-width: 992px) {
@@ -140,7 +140,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fdcc52;
+    color: #E39B9C;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -148,7 +148,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: #E39B9C;
   }
 }
 
@@ -399,13 +399,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fdcc52), to(#fdc539));
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #E39B9C;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E39B9C), to(#fdc539));
+  background: linear-gradient(#E39B9C, #fdc539);
 }
 
 .text-primary {
-  color: #fdcc52;
+  color: #E39B9C;
 }
 
 .no-gutter > [class*='col-'] {
@@ -421,8 +421,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: #E39B9C;
+  background-color: #E39B9C;
 }
 
 .btn {

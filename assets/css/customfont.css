@@ -1,0 +1,10 @@
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family: "Madame Cosmetics";
+    src: url("Madame_Cosmetics.eot?") format("eot"),
+         url("Madame_Cosmetics.woff") format("woff"),
+         url("Madame_Cosmetics.ttf") format("truetype"),
+         url("Madame_Cosmetics.svg#MadameCosmetics") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}

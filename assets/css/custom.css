@@ -1,0 +1,345 @@
+
+/* Specific media queries for background image for landing page */
+
+/* Default if screen size outside of media query */
+/*using larger png file for better quality black and white photo*/
+header.masthead {
+    background-image: url("../img/backgroundphotos/ka_1800.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    /* positions image horizontally and vertically */
+    background-size: cover;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    header {
+        background-image: url("../img/backgroundphotos/ka_960.jpg");
+        background-repeat: no-repeat;
+        background-position: 75% 75%;
+        background-size: cover;
+    }
+}
+
+/* Small Devices, Tablets */
+
+/* Medium to Large Devices, Desktops */
+@media only screen and (min-width: 960px) and  (max-width: 1199px) {
+    header {
+        background-image: url("../img/backgroundphotos/ka_1800.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+}
+
+/* Specific media queries for background image for landing page */
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #E39B9C;
+}
+
+/*General media queries*/
+
+/*SM devices*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .navbar-default .navbar-header .navbar-brand {
+        color: #E39B9C;
+    }
+
+    .navbar-default .navbar-header .navbar-toggle {
+        font-size: 12px;
+        color: #E39B9C;
+        padding: 8px 10px;
+    }
+
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus {
+        color: #F4C4C0;
+    }
+
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+        color: #E39B9C;
+    }
+
+    img.img-circle{
+        display: none;
+    }
+    /* Allows you to scroll past map on mobile */
+    div#map{
+        width: 100%;
+    }
+
+}
+
+/*M-L devices*/
+@media only screen and (min-width: 768px) {
+    .navbar-default .navbar-header .navbar-brand {
+        color: #b1b3b0;
+    }
+
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus
+    {
+        color: #b1b3b0;
+    }
+
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+        color: #E39B9C;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand
+    {
+        color: #E39B9C;
+    }
+}
+
+/*General*/
+
+body, h1, h2, h3, h4, h5, h6, p, a, .navbar-nav>li>a {
+  font-family: 'Courier';
+  font-weight: normal;
+}
+
+div.sectiontitle {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+    color: white;
+    background-color: #F4C4C0;
+    border-color: #E39B9C;
+}
+
+.calltoaction {
+    margin: 3px;
+    background-color: #F4C4C0 !important;
+}
+
+.calltoaction:hover, .calltoaction:active{
+    background-color: #E39B9C !important;
+}
+
+.header-content-inner {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.bg-primary {
+    color: white;
+    background: linear-gradient(#E39B9C,#F4C4C0);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    /* positions image horizontally and vertically */
+    background-size: cover;
+}
+
+.rsvpimg{
+    height: 100%;
+}
+.rsvpform{
+    height: 100%;
+
+}
+.img-circle{
+    border-radius: 50%;
+    border: 3px solid #E39B9C;
+    margin: 5px;
+}
+
+input#gridRadios1, input#gridRadios2{
+    margin-right: 5px;
+}
+
+
+button.btn.btn-outline.btn-xl.calltoaction.submit {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #E39B9C;
+    background-color: white;
+    text-align: center;
+}
+
+
+.title {
+    color: white;
+    text-shadow: 0 0 20px #333;
+}
+
+/* END OF RSVP section styling */
+
+/* The Big Day section styling */
+
+.photostack {
+    background-color: #F4C4C0;
+}
+
+section.thebigday .section-heading {
+    margin-bottom: 100px;
+    padding: 50px 0;
+}
+
+section.thebigday .section-heading h2 {
+    margin-top: 0;
+}
+
+section.thebigday .section-heading p {
+    margin-bottom: 0;
+}
+
+section.thebigday .device-container,
+section.thebigday .feature-item {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section.thebigday .device-container {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+    section.thebigday .device-container {
+        margin-bottom: 0;
+    }
+}
+
+section.thebigday .feature-item {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+section.thebigday .feature-item h3 {
+    font-size: 30px;
+}
+
+section.thebigday .feature-item i {
+    font-size: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* END OF The Big Day section styling */
+
+/* Getting there styling */
+#map {
+    height: 620px;
+    width: 100%;
+    background-color: #b1b3b0;
+}
+
+span.mapdetail {
+    margin-left: 20px;
+    color: #E39B9C;
+    font-size: 12px;
+}
+
+i.mapicon.fa.fa-globe:before, i.mapicon.fa.fa-phone:before {
+    color: #b1b3b0;
+}
+
+/* END OF Getting there styling */
+
+/* Staying there styling */
+
+p.accomm_description, span.mapdetail {
+    margin-bottom: 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h3>a{
+    color: #E39B9C;
+}
+
+h3>a:hover, h3>a.focus, h3>a.active{
+    color: #E39B9C;
+}
+
+.col-md-4.portfolio-item {
+    margin-bottom: 30px;
+}
+
+section#stayingthere{
+    padding-top: 30px;
+}
+/*End of staying there*/
+
+/* Get in touch styling */
+section.contact {
+    background-color: #F4C4C0;
+    padding: 20px 0px;
+    color: white;
+}
+
+li.social-email,
+li.social-facebook,
+li.social-phone,
+li.social-google-plus {
+    margin: 3px;
+}
+
+section.contact ul.list-social li.social-email a,
+section.contact ul.list-social li.social-facebook a,
+section.contact ul.list-social li.social-phone a,
+section.contact ul.list-social li.social-google-plus a {
+    background-color: white;
+    color: #E39B9C;
+}
+
+section.contact ul.list-social li.social-email a:hover,
+section.contact ul.list-social li.social-facebook a:hover,
+section.contact ul.list-social li.social-phone a:hover,
+section.contact ul.list-social li.social-google-plus a:hover {
+    background-color: #E39B9C;
+    color: white;
+}
+
+/* END OF Get in touch styling */
+/*Footer*/
+footer {
+    background-color: white;
+    padding: 10px 0;
+    color: #b1b3b0;
+    text-align: center;
+    font-style: italic;
+}
+
+.nmccontact {
+    color: #b1b3b0;
+}
+
+/*End of footer*/
+
+#mainNav a.navbar-brand.js-scroll-trigger, h2.section-heading {
+    font-family: "Madame Cosmetics";
+}
+
+#mainNav .navbar-brand {
+    color: #F4C4C0;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
+    color: #E39B9C
+}
+
+#mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
+#mainNav.navbar-shrink .navbar-nav>li>a:hover, 
+#mainNav .navbar-nav>li>a.active {
+    color: #E39B9C !important;
+}
+

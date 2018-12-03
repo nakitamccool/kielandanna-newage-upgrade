@@ -30,14 +30,16 @@
 /*===== mobile phones =====*/
 /*=========================*/
 
-/*all mobile phones*/
-@media only screen and (max-width: 600px) {
+/*medium phones*/
+@media (min-width: 425px) and (max-width: 768px) {
+    #hero {
+        height: 100vh;
+        background-position-x: -400px;
+        background-size: cover;
+    }
 
 }
-/*large phones*/
-@media (min-width: 425px) and (max-width: 600px) {
 
-}
 /*medium phones*/
 @media (min-width: 320px) and (max-width: 424.98px) {
     #hero {
@@ -157,10 +159,13 @@ div.sectiontitle {
     padding: 10px;
 }
 
-.title {
+.title, .subtitle {
     color: white;
-    font-family: "Madame Cosmetics";
     text-shadow: 0 0 5px #333;
+}
+
+.title{
+    font-family: "Madame Cosmetics";
 }
 
 .subtitle {
@@ -209,7 +214,7 @@ button.btn.btn-outline.btn-xl.calltoaction.submit {
 
 /* Getting there styling */
 #map {
-    height: 700px;
+    height: 600px;
     width: 100%;
     background-color: #b1b3b0;
 }
@@ -348,4 +353,14 @@ h2.section-heading.text-center {
     border-radius: 50%;
     color: white;
     background-color: #F4C4C0;
+}
+
+h2.getintouchtitle.section-heading.text-center{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.sm-title{
+    color: #F4C4C0;
+    font-family: 'Courier';
 }

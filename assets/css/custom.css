@@ -1,34 +1,13 @@
-/*============================================================================*/
-/*========================   HERO IMAGE   ====================================*/
-/*============================================================================*/
+/* Background image for landing page */
 .masthead {
     background-image: url("../img/backgroundphotos/ka_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #hero {
     height: 100vh;
 }
-
-/* Extra Small Devices, Phones */
-/*@media only screen and (min-width: 0px) and (max-width: 767px) {*/
-/*    .masthead {*/
-/*        background-position: 75% 75%;*/
-/*    }*/
-/*}*/
-
-/* Small Devices, Tablets */
-
-/* Medium to Large Devices, Desktops */
-/*@media only screen and (min-width: 960px) and  (max-width: 1199px) {*/
-/*    .masthead {*/
-/*        background-position: 50% 50%;*/
-/*    }*/
-
-/*}*/
-/*=========================*/
-/*===== mobile phones =====*/
-/*=========================*/
 
 /*medium phones*/
 @media (min-width: 425px) and (max-width: 768px) {
@@ -37,7 +16,6 @@
         background-position-x: -400px;
         background-size: cover;
     }
-
 }
 
 /*medium phones*/
@@ -47,101 +25,91 @@
         background-position-x: -550px;
         background-size: cover;
     }
-
 }
+
 /* small phones*/
 @media only screen and (max-width: 319.98px) {
     #hero {
         height: 100vh;
         background-position-x: -550px;
     }
-
-}
-
-
-
-
-/* Specific media queries for background image for landing page */
-
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #E39B9C;
 }
 
 /*General media queries*/
 
 /*SM devices*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .navbar-default .navbar-header .navbar-brand {
-        color: #E39B9C;
-    }
-
-    .navbar-default .navbar-header .navbar-toggle {
-        font-size: 12px;
-        color: #E39B9C;
-        padding: 8px 10px;
-    }
-
-    .navbar-default .nav > li > a,
-    .navbar-default .nav > li > a:focus {
-        color: #F4C4C0;
-    }
-
-    .navbar-default .nav > li > a:hover,
-    .navbar-default .nav > li > a:focus:hover {
-        color: #E39B9C;
-    }
-
-    img.img-circle{
-        display: none;
-    }
     /* Allows you to scroll past map on mobile */
     div#map{
         width: 100%;
     }
-
 }
 
-/*M-L devices*/
-@media only screen and (min-width: 768px) {
-    .navbar-default .navbar-header .navbar-brand {
-        color: #b1b3b0;
-    }
-
-    .navbar-default .nav > li > a,
-    .navbar-default .nav > li > a:focus
-    {
-        color: #b1b3b0;
-    }
-
-    .navbar-default .nav > li > a:hover,
-    .navbar-default .nav > li > a:focus:hover {
-        color: #E39B9C;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand
-    {
-        color: #E39B9C;
-    }
+/* Navbar */
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #E39B9C;
 }
+
+#mainNav a.navbar-brand.js-scroll-trigger, h2.section-heading {
+    font-family: "Madame Cosmetics";
+}
+
+#mainNav .navbar-brand {
+    color: #F4C4C0;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
+    color: #E39B9C
+}
+
+#mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
+#mainNav.navbar-shrink .navbar-nav>li>a:hover, 
+#mainNav .navbar-nav>li>a:active{
+    color: #E39B9C !important;
+}
+/* End of Navbar */
+
+/* The big day */
+.weddingdetailstitle{
+    color: #E39B9C;
+    font-family: "Madame Cosmetics";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* End of the big day */
 
 /*General*/
-
 body, h1, h2, h3, h4, h5, h6, p, a, .navbar-nav>li>a {
   font-family: 'Courier';
   font-weight: normal;
 }
 
-div.sectiontitle {
-    background-color: white;
-    text-align: center;
-    width: 100%;
+.header-content-inner {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 10px;
 }
 
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+/*Titles*/
+.title, .subtitle {
     color: white;
-    background-color: #F4C4C0;
-    border-color: #E39B9C;
+    text-shadow: 0 0 5px #333;
+}
+
+.title{
+    font-family: "Madame Cosmetics";
+    color: white;
+    text-shadow: 0 0 20px #333;
+}
+
+.sm-title{
+    color: #F4C4C0;
+    font-family: 'Courier';
+}
+
+.subtitle {
+    font-style: italic;
 }
 
 .calltoaction {
@@ -153,66 +121,31 @@ div.sectiontitle {
     background-color: #E39B9C !important;
 }
 
-.header-content-inner {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 20px;
-    padding: 10px;
+.greytitle{
+    color: #6d6d6d;
 }
 
-.title, .subtitle {
-    color: white;
-    text-shadow: 0 0 5px #333;
+h2.getintouchtitle.section-heading.text-center{
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-.title{
-    font-family: "Madame Cosmetics";
-}
-
-.subtitle {
-    font-style: italic;
-}
-
-.bg-primary {
-    background: linear-gradient(#E39B9C,#F4C4C0);
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    /* positions image horizontally and vertically */
-    background-size: cover;
-}
-
-.portfolio-item{
-    background-color: white;
-    color: grey;
-}
-.img-circle{
-    border-radius: 50%;
-    border: 3px solid #E39B9C;
-    margin: 5px;
+h2.section-heading.text-center {
+    padding-bottom: 4%;
 }
 
 
-button.btn.btn-outline.btn-xl.calltoaction.submit {
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #E39B9C;
+div.sectiontitle {
     background-color: white;
     text-align: center;
+    width: 100%;
 }
 
-
-.title {
+.accommtitle{
     color: white;
-    text-shadow: 0 0 20px #333;
 }
 
-/* END OF RSVP section styling */
-
-/* The Big Day section styling */
-
-
-/* END OF The Big Day section styling */
-
-/* Getting there styling */
+/* Getting there and staying there styling */
 #map {
     height: 600px;
     width: 100%;
@@ -229,9 +162,13 @@ i.mapicon.fa:before {
     color: #F4C4C0;
 }
 
-/* END OF Getting there styling */
-
-/* Staying there styling */
+.bg-primary {
+    background: linear-gradient(#E39B9C,#F4C4C0);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    /* positions image horizontally and vertically */
+    background-size: cover;
+}
 
 p.accomm_description, span.mapdetail {
     margin-bottom: 1px;
@@ -251,10 +188,8 @@ a:hover, a:focus, a:active{
     margin: 2%;
     padding: 2%;
     min-width: 280px;
-}
-
-.accommtitle{
-    color: white;
+    background-color: white;
+    color: grey;
 }
 
 p {
@@ -264,7 +199,7 @@ p {
 section#stayingthere{
     padding-top: 30px;
 }
-/*End of staying there*/
+/*End of getting there and staying there styling */
 
 /* Get in touch styling */
 section.contact {
@@ -273,30 +208,21 @@ section.contact {
     color: white;
 }
 
-li.social-email,
-li.social-facebook,
-li.social-phone,
-li.social-google-plus {
-    margin: 3px;
-}
-
 section.contact ul.list-social li.social-email a,
 section.contact ul.list-social li.social-facebook a,
-section.contact ul.list-social li.social-phone a,
-section.contact ul.list-social li.social-google-plus a {
+section.contact ul.list-social li.social-phone a {
     background-color: white;
     color: #E39B9C;
 }
 
 section.contact ul.list-social li.social-email a:hover,
 section.contact ul.list-social li.social-facebook a:hover,
-section.contact ul.list-social li.social-phone a:hover,
-section.contact ul.list-social li.social-google-plus a:hover {
+section.contact ul.list-social li.social-phone a:hover {
     background-color: #E39B9C;
     color: white;
 }
-
 /* END OF Get in touch styling */
+
 /*Footer*/
 footer {
     background-color: white;
@@ -309,58 +235,9 @@ footer {
 .nmccontact {
     color: #b1b3b0;
 }
-
 /*End of footer*/
 
-/* Navbar */
-#mainNav a.navbar-brand.js-scroll-trigger, h2.section-heading {
-    font-family: "Madame Cosmetics";
-}
 
-#mainNav .navbar-brand {
-    color: #F4C4C0;
-}
 
-#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
-    color: #E39B9C
-}
 
-#mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
-#mainNav.navbar-shrink .navbar-nav>li>a:hover, 
-#mainNav .navbar-nav>li>a:active{
-    color: #E39B9C !important;
-}
 
-/* End of Navbar */
-
-h2.section-heading.text-center {
-    padding-bottom: 4%;
-}
-
-/* The big day */
-.weddingdetailstitle{
-    color: #E39B9C;
-    font-family: "Madame Cosmetics";
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.greytitle{
-    color: #6d6d6d;
-}
-
-.tellmemore{
-    border-radius: 50%;
-    color: white;
-    background-color: #F4C4C0;
-}
-
-h2.getintouchtitle.section-heading.text-center{
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.sm-title{
-    color: #F4C4C0;
-    font-family: 'Courier';
-}

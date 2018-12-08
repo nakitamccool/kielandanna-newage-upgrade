@@ -3,70 +3,61 @@
     background-image: url("../img/backgroundphotos/ka_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #hero {
     height: 100vh;
 }
-
-/*medium phones*/
-@media (min-width: 425px) and (max-width: 768px) {
-    #hero {
-        height: 100vh;
-        background-position-x: -400px;
-        background-size: cover;
-    }
-}
-
-/*medium phones*/
-@media (min-width: 320px) and (max-width: 424.98px) {
-    #hero {
-        height: 100vh;
-        background-position-x: -550px;
-        background-size: cover;
-    }
-}
-
-/* small phones*/
-@media only screen and (max-width: 319.98px) {
-    #hero {
-        height: 100vh;
-        background-position-x: -550px;
-    }
-}
-
 /*General media queries*/
+@media (min-width: 0px) {
+  #mainNav .navbar-brand {
+    color: #E39B9C;
+  }    
+}
 
-/*SM devices*/
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-    /* Allows you to scroll past map on mobile */
-    div#map{
-        width: 100%;
-    }
+@media (min-width: 576px) {
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #map {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  #map {
+    height: 300px;
+    width: 100%;
+  }
+  #mainNav .navbar-brand {
+    color: white;
+  }
 }
 
 /* Navbar */
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #E39B9C;
-}
 
 #mainNav a.navbar-brand.js-scroll-trigger, h2.section-heading {
     font-family: "Madame Cosmetics";
 }
 
-#mainNav .navbar-brand {
-    color: #F4C4C0;
-}
-
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
-    color: #E39B9C
+    color: #F4C4C0;
 }
 
 #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
 #mainNav.navbar-shrink .navbar-nav>li>a:hover, 
 #mainNav .navbar-nav>li>a:active{
     color: #E39B9C !important;
+}
+
+.margin-top{
+    margin-top: 10%;
 }
 /* End of Navbar */
 
@@ -152,7 +143,7 @@ div.sectiontitle {
 
 /* Getting there and staying there styling */
 #map {
-    height: 600px;
+    height: 400px;
     width: 100%;
     background-color: #b1b3b0;
 }

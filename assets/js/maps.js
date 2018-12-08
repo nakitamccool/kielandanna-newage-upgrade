@@ -4,7 +4,7 @@ function initMap() {
     var reception = {lat: 52.846400, lng: -7.401000}; 
     var mapOptions = {
         zoom: 10,
-        center: {lat: 53.033685, lng: -7.307860},
+        center: {lat: 52.948967, lng: -7.304582},
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         /*
        * gesture handling mode set to 'cooperative',

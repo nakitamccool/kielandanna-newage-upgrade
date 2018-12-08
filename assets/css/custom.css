@@ -6,6 +6,13 @@
     background-position: center;
 }
 
+.thebigday{
+    background-image: url("../img/backgroundphotos/floral_frame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    
+}
 #hero {
     height: 100vh;
 }
@@ -14,6 +21,9 @@
   #mainNav .navbar-brand {
     color: #E39B9C;
   }    
+  .thebigday{
+      background-position: center;
+    }
 }
 
 @media (min-width: 576px) {
@@ -21,6 +31,9 @@
     height: 200px;
     width: 100%;
   }
+  .thebigday{
+      background-position: top center;
+    }
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,5 @@
 var demo_pass = "Durrow2019"; 
 
-
 // Repeatedly prompt for user password until success:
 (function promptPass() {
 
@@ -13,7 +12,4 @@ var demo_pass = "Durrow2019";
 
 }());
 
-alert('Welcome to our wedding website!');
 document.getElementById("hideAll").style.display = "none"; 
-
-

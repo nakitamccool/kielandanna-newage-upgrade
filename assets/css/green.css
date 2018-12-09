@@ -1,0 +1,79 @@
+/*
+  --lightgreen: #75BB78;
+  --green: #569159;
+*/
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
+    color: #75BB78;
+}
+
+#mainNav.navbar-shrink .navbar-nav>li>a:focus:hover, 
+#mainNav.navbar-shrink .navbar-nav>li>a:hover, 
+#mainNav .navbar-nav>li>a:active{
+    color: #569159 !important;
+}
+
+.calltoaction {
+    margin: 3px;
+    background-color: #75BB78 !important;
+}
+
+.calltoaction:hover, .calltoaction:active{
+    background-color: #569159 !important;
+}
+
+.pinktitle{
+    color: #569159;
+}
+
+i.mapicon.fa:before {
+    color: #569159;
+}
+
+#gettingthere {
+  background: #75BB78;
+}
+
+.bg-primary {
+    background: linear-gradient(#569159,#75BB78);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    /* positions image horizontally and vertically */
+    background-size: cover;
+}
+
+a, .fa-wifi, .fa-car{
+    color: #569159;
+}
+
+a:hover, a:focus, a:active{
+    color: #75BB78;
+    text-decoration: none;
+}
+
+/* Get in touch styling */
+section.contact {
+    background-color: #75BB78;
+    color: white;
+}
+
+#submit{
+  float: right;
+  background: #569159;
+  color: white;
+}
+      
+.input-group-addon{
+  border: none;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  background: #569159;
+  width: 30px;
+  padding-top: 4px;
+}
+
+
+
+
+
+
+

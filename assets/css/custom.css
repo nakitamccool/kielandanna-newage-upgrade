@@ -11,8 +11,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
-    
 }
+
+#thebigday h2.section-heading {
+    margin-top: 4%;
+}
+
+img {
+  border-radius: 75%;
+}
+
 #hero {
     height: 100vh;
 }
@@ -23,7 +31,7 @@
   }    
   .thebigday{
       background-position: center;
-    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -33,7 +41,7 @@
   }
   .thebigday{
       background-position: top center;
-    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -50,6 +58,9 @@
   }
   #mainNav .navbar-brand {
     color: white;
+  }
+  img {
+    border-radius: 0%;
   }
 }
 
@@ -144,7 +155,11 @@ h2.getintouchtitle.section-heading.text-center{
 }
 
 h2.section-heading.text-center {
-    padding-bottom: 4%;
+    padding-bottom: 2%;
+}
+
+section {
+    padding: 80px 0;
 }
 
 
@@ -177,6 +192,10 @@ span.mapdetail {
 
 i.mapicon.fa:before {
     color: #E39B9C;
+}
+
+#gettingthere {
+  background: #F4C4C0;
 }
 
 .bg-primary {

@@ -243,16 +243,66 @@ section.contact {
     color: white;
 }
 
-section.contact ul.list-social li.social-email a,
-section.contact ul.list-social li.social-facebook a,
-section.contact ul.list-social li.social-phone a {
+.rsvp{
+  color: grey;
+  background-color: white;
+  border-radius: 5px;
+  padding: 40px;
+  -webkit-box-shadow: -1px 3px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 18px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 18px 0px rgba(0,0,0,0.75);
+}
+
+form{
+  width: 450px;
+}
+
+input, select{
+   padding: 2px;
+   width: 100%;
+   border: none;
+   border-radius: 0 5px 5px 0;
+}
+
+input {
+   padding: 4px;
+}
+
+.input-group{
+   border-radius: 5px;
+   -webkit-box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.1);
+   -moz-box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.1);
+   box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.1);
+}           
+.input-group-addon{
+  border: none;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  background: #E39B9C;
+  width: 30px;
+  padding-top: 4px;
+}
+
+.input-group-addon i {
+  color: white;
+}
+
+#rsvpimage{
+  width: 175px !important;
+  height: 175px;
+  background-image: url("../img/backgroundphotos/AKboquet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+section.contact ul.list-social li.social-email a {
     background-color: white;
     color: #E39B9C;
 }
 
-section.contact ul.list-social li.social-email a:hover,
-section.contact ul.list-social li.social-facebook a:hover,
-section.contact ul.list-social li.social-phone a:hover {
+section.contact ul.list-social li.social-email a:hover {
     background-color: #E39B9C;
     color: white;
 }

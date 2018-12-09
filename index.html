@@ -83,14 +83,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12">
-            <img class="mx-auto d-none d-md-block" src="assets/img/weddingpics/church400x200.jpg"></img>
-            <img class="mx-auto d-xs-block d-md-none" src="assets/img/weddingpics/church200x100.jpg"></img>
+            <img class="mx-auto d-none d-md-block box-shadow-light" src="assets/img/weddingpics/church400x200.jpg"></img>
+            <img class="mx-auto d-xs-block d-md-none box-shadow-light" src="assets/img/weddingpics/church200x100.jpg"></img>
             <h3 class="mx-auto d-block weddingdetailstitle">Wedding Ceremony</h3>
             <p class="margin-bottom mx-auto d-block">1pm, Church of the Most Holy Rosary, Abbeyleix</p>
           </div>
           <div class="col-lg-6 col-md-12">
-            <img class="mx-auto d-none d-md-block" src="assets/img/weddingpics/castledurrow400x200.jpg"></img>
-            <img class="mx-auto d-xs-block d-md-none" src="assets/img/weddingpics/castledurrow200x100.jpg"></img>
+            <img class="mx-auto d-none d-md-block box-shadow-light" src="assets/img/weddingpics/castledurrow400x200.jpg"></img>
+            <img class="mx-auto d-xs-block d-md-none box-shadow-light" src="assets/img/weddingpics/castledurrow200x100.jpg"></img>
             <h3 class="mx-auto d-block weddingdetailstitle">Wedding Reception</h3>
             <p class="margin-bottom mx-auto d-block">Reception to follow at Castle Durrow</p>
           </div>
@@ -104,7 +104,7 @@
       <h2 class="section-heading text-center whitetitle">Getting There</h2>
       <div class="container">
         <div class="row">
-          <div id="map"></div>
+          <div id="map" class="box-shadow-light"></div>
         </div>
       </div>
     </section>
@@ -324,33 +324,38 @@
         <h2 class="getintouchtitle section-heading text-center">RSVP</h2>
         <div class="container rsvp">
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div id="rsvpimage"></div>
+            <div class="col-md-6 col-sm-12">
+              <div id="rsvpimage" class="box-shadow-light"></div>
+              <div>
+                <p class="margin-bottom">We'd love to have you there to celebrate with us on our wedding day! Let us know if you can make it by filling out this form or emailing us at:  
+                  <a href="mailto:kielandanna@gmail.com">kielandanna@gmail.com</a>
+                </p>
+              </div>
             </div>
-            <form class="col-lg-8 col-md-6 col-sm-12" id="rsvpform">
-              <div class="form-group">
+            <form class="col-md-6 col-sm-12" id="rsvpform">
+              <div class="form-group box-shadow-extralight">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
                   <input required type="text" id="name" name="name" class="form-control" placeholder="Enter your name" />
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group box-shadow-extralight">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                   <input required type="email" id="email" name="email" class="form-control" placeholder="Enter your email" />
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group box-shadow-extralight">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fas fa-calendar" aria-hidden="true"></i></div>
                   <select required class="custom-select form-control" type="response" id="response" name="response">
                     <option selected>Select response</option>
-                    <option value="yes">Wouldn't miss it for the world!</option>
-                    <option value="no">Sorry, can't make it.</option>
+                    <option value="yes">Yes, I wouldn't miss it for the world!</option>
+                    <option value="no">No, I'm sorry can't make it.</option>
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group box-shadow-extralight">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fas fa-users" aria-hidden="true"></i></div>
                   <select required class="custom-select form-control" type="guestCount" id="guestCount" name="guestCount">
@@ -364,22 +369,16 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group box-shadow-extralight">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fas fa-comment" aria-hidden="true"></i></div>
                   <input type="text" id="message" name="message" class="form-control" placeholder="Enter your message here (optional)" />
                 </div>
               </div>
-              </div>
-              <button type="submit" class="btn btn-default">Send</button>
+              <button id="submit" type="submit" class="btn btn-default box-shadow-light">Send</button>
             </form>
           </div>
         </div>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-email">
-            <a href="mailto:kielandanna@gmail.com"><i class="fas fa-envelope"></i></a>
-          </li>
-        </ul>
       </div>
     </section>
     <!-- End of get in touch -->

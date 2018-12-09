@@ -221,7 +221,7 @@ a:hover, a:focus, a:active{
 }
 
 .portfolio-item {
-    padding: 2%;
+    padding: 2% 3%;
     background-color: white;
     color: grey;
 }
@@ -233,6 +233,10 @@ p {
 
 section#stayingthere{
     padding-top: 30px;
+}
+
+.accomm-details {
+  width: 220px;
 }
 /*End of getting there and staying there styling */
 

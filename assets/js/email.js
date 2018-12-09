@@ -2,7 +2,7 @@ $("#rsvpform").on("submit", function(event) {
     event.preventDefault(); // prevent reload
     
     var formData = new FormData(this);
-    formData.append('service_id', 'personal_wmail');
+    formData.append('service_id', 'personal_gmail');
     formData.append('template_id', 'weddingsite');
     formData.append('user_id', 'user_6EodhcojVYCogeeXhU017');
  

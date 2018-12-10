@@ -1,6 +1,6 @@
 function initMap() {
     //Location coordinates
-    var church = {lat: 52.987434, lng: -7.142769};
+    var church = {lat: 52.914711, lng: -7.345970};
     var reception = {lat: 52.846400, lng: -7.401000}; 
     var mapOptions = {
         zoom: 10,

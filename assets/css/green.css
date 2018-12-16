@@ -3,6 +3,12 @@
   --green: #569159;
 */
 
+
+.masthead {
+    background-image: url("../img/backgroundphotos/beach.jpg");
+    background-position: center;
+}
+
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
     color: #75BB78;
 }

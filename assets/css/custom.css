@@ -3,6 +3,9 @@
   --#E39B9C: #E39B9C;
 */
 
+  #mainNav .navbar-brand {
+    display: none;
+  }
 
 #hideAll {
    position: fixed;
@@ -72,8 +75,8 @@ img {
     height: 300px;
     width: 100%;
   }
-  #mainNav .navbar-brand {
-    color: white;
+  #mainNav.navbar-shrink .navbar-brand {
+    display: block;
   }
   img {
     border-radius: 0%;

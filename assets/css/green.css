@@ -6,7 +6,13 @@
 
 .masthead {
     background-image: url("../img/backgroundphotos/beach.jpg");
-    background-position: center;
+    background-position: bottom center;
+}
+
+.titlesubtitle {
+    padding-top: 60%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{

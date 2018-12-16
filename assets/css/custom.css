@@ -58,7 +58,7 @@ img {
     padding-bottom: 0px;
   }
   .titlesubtitle {
-    padding-top: 400px;
+    padding-top: 70%;
   }
 }
 
@@ -100,8 +100,7 @@ img {
     display: none;
   }
   .titlesubtitle {
-    padding-top: 500px;
-    padding-right: 850px;
+    padding-top: 60%;
   }
 }
 

@@ -3,10 +3,6 @@
   --#E39B9C: #E39B9C;
 */
 
-  #mainNav .navbar-brand {
-    display: none;
-  }
-
 #hideAll {
    position: fixed;
    left: 0px; 
@@ -19,7 +15,7 @@
  }
 /* Background image for landing page */
 .masthead {
-    background-image: url("../img/backgroundphotos/ka_background.jpg");
+    background-image: url("../img/backgroundphotos/twelveapostles.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,6 +47,19 @@ img {
   .thebigday{
       background-position: center;
   }
+  .masthead {
+      background-position: center left;
+  }
+  #mainNav .navbar-brand {
+    display: block;
+  }
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .titlesubtitle {
+    padding-top: 400px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -61,12 +70,18 @@ img {
   .thebigday{
       background-position: top center;
   }
+  .masthead {
+      background-position: center left;
+  }
 }
 
 @media (min-width: 768px) {
   #map {
     height: 250px;
     width: 100%;
+  }
+  .masthead {
+      background-position: center left;
   }
 }
 
@@ -80,6 +95,13 @@ img {
   }
   img {
     border-radius: 0%;
+  }
+  #mainNav .navbar-brand {
+    display: none;
+  }
+  .titlesubtitle {
+    padding-top: 500px;
+    padding-right: 850px;
   }
 }
 

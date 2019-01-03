@@ -18,7 +18,7 @@
     background-image: url("../img/backgroundphotos/ka_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .thebigday{
@@ -46,9 +46,6 @@ img {
   }    
   .thebigday{
       background-position: center;
-  }
-  .masthead {
-      background-position: center left;
   }
   #mainNav .navbar-brand {
     display: block;

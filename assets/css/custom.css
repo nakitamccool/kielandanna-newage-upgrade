@@ -15,7 +15,7 @@
  }
 /* Background image for landing page */
 .masthead {
-    background-image: url("../img/backgroundphotos/aus.jpg");
+    background-image: url("../img/backgroundphotos/ka_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,9 +57,6 @@ img {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .titlesubtitle {
-    padding-top: 70%;
-  }
 }
 
 @media (min-width: 576px) {
@@ -98,9 +95,6 @@ img {
   }
   #mainNav .navbar-brand {
     display: none;
-  }
-  .titlesubtitle {
-    padding-top: 60%;
   }
 }
 

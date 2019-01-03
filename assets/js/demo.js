@@ -1,4 +1,4 @@
-var demo_pass = "Durrow2019"; 
+var demo_pass = "durrow19"; 
 
 // Repeatedly prompt for user password until success:
 (function promptPass() {

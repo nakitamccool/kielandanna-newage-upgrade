@@ -10,18 +10,18 @@
  }
 /* Background image for landing page */
 .masthead {
-    background-image: url("../img/backgroundphotos/ka_background.jpg");
+    background-image: url("../img/backgroundphotos/ka_1800.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    -webkit-background-image: url("../img/backgroundphotos/ka_background.jpg");
+    background-position: bottom right;
+    -webkit-background-image: url("../img/backgroundphotos/ka_1800.jpg");
     -webkit-background-repeat: no-repeat;
     -webkit-background-size: cover;
-    -webkit-background-position: center center;
-    -moz-background-image: url("../img/backgroundphotos/ka_background.jpg");
+    -webkit-background-position: bottom right;
+    -moz-background-image: url("../img/backgroundphotos/ka_1800.jpg");
     -moz-background-repeat: no-repeat;
     -moz-background-size: cover;
-    -moz-background-position: center center;
+    -moz-background-position: bottom right;
 }
 
 .thebigday{
@@ -33,6 +33,10 @@
 
 #thebigday h2.section-heading {
     margin-top: 4%;
+}
+
+.margin-top.my-auto.mx-auto.text-center.titlesubtitle {
+    padding-bottom: 0%;
 }
 
 img {
@@ -57,6 +61,17 @@ img {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .masthead {
+      background-image: url("../img/backgroundphotos/ka_650.jpg");
+      background-position: bottom center;
+      -webkit-background-image: url("../img/backgroundphotos/ka_650.jpg");
+      -webkit-background-position: bottom center;
+      -moz-background-image: url("../img/backgroundphotos/ka_650.jpg");
+      -moz-background-position: bottom center;
+  }
+  .margin-top.my-auto.mx-auto.text-center.titlesubtitle {
+      padding-bottom: 45%;
+  }
 }
 
 @media (min-width: 576px) {
@@ -67,9 +82,6 @@ img {
   .thebigday{
       background-position: top center;
   }
-  .masthead {
-      background-position: center left;
-  }
 }
 
 @media (min-width: 768px) {
@@ -79,6 +91,9 @@ img {
   }
   .masthead {
       background-position: center left;
+  }
+  .margin-top.my-auto.mx-auto.text-center.titlesubtitle {
+      padding-bottom: 20%;
   }
 }
 
@@ -95,6 +110,10 @@ img {
   }
   #mainNav .navbar-brand {
     display: none;
+  }
+  /* Background image for landing page */
+  .masthead {
+      background-image: url("../img/backgroundphotos/ka_960.jpg");
   }
 }
 
@@ -152,7 +171,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, #mainNav .navbar-nav>li>a {
 /*Titles*/
 .title, .subtitle {
     color: white;
-    text-shadow: 0 0 5px #333;
+    text-shadow: 0 0 10px #333;
 }
 
 .title{
